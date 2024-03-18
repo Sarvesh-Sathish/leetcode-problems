@@ -25,3 +25,9 @@ print('fruitsInserted: ', fruits) #! O(N) because of the shifting of elements to
 selectedFruit = fruits[0] # Pretty intuitive 
 print('fruitsGet: ', selectedFruit) #! O(1) because it is simply returning the element at the given index
 
+# Sort operation
+fruits.sort() # Sorts the list in place
+print('fruitsSorted: ', fruits) #! O(nlogn) because of the TimeSort Algorithm
+#? Might be worth reviewing what the timesort algorithm does
+
+
