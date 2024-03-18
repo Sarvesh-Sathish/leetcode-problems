@@ -9,6 +9,25 @@ print('fruitsCopy: ',fruitsCopy) #! O(N) because it has to iterate through a loo
 fruits.append('mango') # Added a mango to the end of the list
 print('fruitsAppended: ',fruits) #! O(1)* because we are added at end of array but doubling the size of the backing array if it is full
 
+# Remove operation
+for i in range(3):
+    fruits.append('not a fruit')
+    fruits.append('bin')
+
+print('errorFruits: ', fruits)
+fruits.remove('not a fruit') # Removes first occurence of 'not a fruit'
+print('fixedFruits: ', fruits) #! O(N) because we have to iterate through list to find the first occurence of the element
+
+# Count operation 
+print('num of bins in fruits: ', fruits.count('bin')) #! O(N) because we have to iterate through the list to count the number of occurences of the element
+
+# Remove all occurences
+fruits = [i for i in fruits if i != 'bin']
+print('removedBins: ', fruits) #! O(n) because we have to iterate through the list to remove all occurences 
+
+fruits = [i for i in fruits if i != 'not a fruit']
+print('removedBins: ', fruits)
+
 # Pop Operation
 fruits.pop() # Removed the last element from the list
 print('fruitsPopped: ',fruits) #! O(1) because we are simply setting the internal size of the array to be one less than it was
