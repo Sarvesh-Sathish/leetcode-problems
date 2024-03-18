@@ -3,5 +3,5 @@ Welcome to my LeetCode Solutions repository! This repo contains my personal solu
 
 ## See User Statistics
 ```
-python problemstats.py
+python stats.py
 ```
