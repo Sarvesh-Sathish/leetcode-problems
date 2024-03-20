@@ -13,4 +13,13 @@ myAge = family.get('sarvesh')
 print('My Age: ', myAge) #! O(N)
 
 # Set item in a dictionary
+family['sathish'] = 51
+print('Dad age: ', family['sathish']) #! O(1) 
 
+# Pop last added item in a dictionary (not last edited item)
+family.popitem() #
+print(family) #! O(1)
+
+# Pop item with specific key in a dictionary
+family.pop('tarunesh') # pops brother out of dictionary
+print(family) #! O(1)
